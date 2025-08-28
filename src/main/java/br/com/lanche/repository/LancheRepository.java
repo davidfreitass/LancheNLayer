@@ -1,5 +1,7 @@
 package br.com.lanche.repository;
 
+import br.com.lanche.models.Lanche;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,15 +12,15 @@ public class LancheRepository {
         this.lanches.add(lanche);
     }
 
-    public List<lanche> buscarTodos() {
+    public List<Lanche> buscarTodos() {
         return this.lanches;
     }
 
     public Lanche buscarPorId(int id) {
-        return this.lanches.stream().filter(Lanche l -> l.getId() == id).findFirst().get();
+        return this.lanches.stream().filter(l -> l.getId() == id).findFirst().get();
     }
 
     public void excluir (int id) {
-        this.lanches.removeIf(Lanche l -> l.getId() == id);
+        this.lanches.removeIf(l -> l.getId() == id);
     }
 }
