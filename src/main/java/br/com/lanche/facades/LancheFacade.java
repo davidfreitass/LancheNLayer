@@ -2,10 +2,12 @@ package br.com.lanche.facades;
 
 import br.com.lanche.applications.LancheApplication;
 import br.com.lanche.models.Lanche;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
 
+@Component
 public class LancheFacade {
     private final LancheApplication lancheApplication;
 

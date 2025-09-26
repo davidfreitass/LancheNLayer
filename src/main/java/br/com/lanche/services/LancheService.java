@@ -1,6 +1,7 @@
 package br.com.lanche.services;
 
 import br.com.lanche.models.Lanche;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+@Service
 public class LancheService {
     private static final String PASTA_IMAGENS = "produto_imagens/";
 

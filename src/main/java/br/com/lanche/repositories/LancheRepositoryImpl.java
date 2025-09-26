@@ -2,10 +2,12 @@ package br.com.lanche.repositories;
 
 import br.com.lanche.interfaces.LancheRepository;
 import br.com.lanche.models.Lanche;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class LancheRepositoryImpl implements LancheRepository {
     private List<Lanche> lanches = new ArrayList<>();
 

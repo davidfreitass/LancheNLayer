@@ -3,10 +3,12 @@ package br.com.lanche.applications;
 import br.com.lanche.interfaces.LancheRepository;
 import br.com.lanche.models.Lanche;
 import br.com.lanche.services.LancheService;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
 
+@Component
 public class LancheApplication {
     private LancheService lancheService;
     private LancheRepository lancheRepository;
